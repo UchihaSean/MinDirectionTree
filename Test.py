@@ -1,0 +1,1 @@
+import os;import filecmp;while 1:    os.system("java MakeFile");    os.system("java Test");    diff=filecmp.cmp('output1.txt', 'output2.txt', shallow=False)    if diff==False :        print("difference happen");        break;
